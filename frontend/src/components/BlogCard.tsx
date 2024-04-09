@@ -5,7 +5,7 @@ interface BlogCardProps {
   title: string;
   content: string;
   publishedDate: string;
-  id: number;
+  id?: number;
 }
 
 export const BlogCard = ({

@@ -34,7 +34,7 @@ export const useBlogs = () => {
   };
 };
 
-export const useBlog = ({ id }: { id: number }) => {
+export const useBlog = ({ id }: { id: any }) => {
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState<Blog>();
 

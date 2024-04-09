@@ -4,9 +4,10 @@ import { FullBlog } from "../components/FullBlog";
 
 export const Blog = () => {
   const { id } = useParams();
+  console.log("look carefully the id " + parseFloat(id));
 
   const { loading, blog } = useBlog({
-    id: id || "",
+    id: id,
   });
 
   if (loading || !blog) {
